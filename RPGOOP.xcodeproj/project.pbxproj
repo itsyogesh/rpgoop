@@ -17,6 +17,7 @@
 		EC05C7A21C6BA7A3009BE1F5 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05C7A11C6BA7A3009BE1F5 /* Enemy.swift */; };
 		EC05C7A41C6BAE32009BE1F5 /* Kimara.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05C7A31C6BAE32009BE1F5 /* Kimara.swift */; };
 		EC05C7A61C6BAFC5009BE1F5 /* DevilWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05C7A51C6BAFC5009BE1F5 /* DevilWizard.swift */; };
+		EC05C7A81C6BC4C4009BE1F5 /* Piedra-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC05C7A71C6BC4C4009BE1F5 /* Piedra-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EC05C7A11C6BA7A3009BE1F5 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		EC05C7A31C6BAE32009BE1F5 /* Kimara.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kimara.swift; sourceTree = "<group>"; };
 		EC05C7A51C6BAFC5009BE1F5 /* DevilWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevilWizard.swift; sourceTree = "<group>"; };
+		EC05C7A71C6BC4C4009BE1F5 /* Piedra-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Piedra-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		EC05C78A1C6AB86C009BE1F5 /* RPGOOP */ = {
 			isa = PBXGroup;
 			children = (
+				EC05C7A71C6BC4C4009BE1F5 /* Piedra-Regular.ttf */,
 				EC05C78B1C6AB86C009BE1F5 /* AppDelegate.swift */,
 				EC05C78D1C6AB86C009BE1F5 /* ViewController.swift */,
 				EC05C78F1C6AB86C009BE1F5 /* Main.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				EC05C7961C6AB86C009BE1F5 /* LaunchScreen.storyboard in Resources */,
 				EC05C7931C6AB86C009BE1F5 /* Assets.xcassets in Resources */,
+				EC05C7A81C6BC4C4009BE1F5 /* Piedra-Regular.ttf in Resources */,
 				EC05C7911C6AB86C009BE1F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +308,7 @@
 				EC05C79C1C6AB86C009BE1F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
