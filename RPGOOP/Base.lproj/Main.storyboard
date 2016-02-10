@@ -126,6 +126,17 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fp-Nv-ubP">
+                                <rect key="frame" x="254" y="497" width="92" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="O7P-eb-8XN"/>
+                                    <constraint firstAttribute="height" constant="103" id="nIz-gc-85t"/>
+                                </constraints>
+                                <state key="normal" image="attack"/>
+                                <connections>
+                                    <action selector="onAttackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQq-DE-WVo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -137,8 +148,10 @@
                             <constraint firstItem="hGS-bF-f65" firstAttribute="top" secondItem="dUT-JE-mDg" secondAttribute="bottom" id="9Z0-P9-E3A"/>
                             <constraint firstItem="gd6-Nb-zy1" firstAttribute="centerX" secondItem="vXp-jN-C37" secondAttribute="centerX" id="AXa-Bu-Iae"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eOM-0l-d9b" secondAttribute="bottom" constant="97" id="HOL-jl-1X6"/>
+                            <constraint firstItem="2Fp-Nv-ubP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Htf-15-JEd"/>
                             <constraint firstAttribute="bottom" secondItem="hGS-bF-f65" secondAttribute="bottom" constant="-39" id="Kic-Ro-5N6"/>
                             <constraint firstItem="d5U-Iy-hiQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kza-pK-AdZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Fp-Nv-ubP" secondAttribute="bottom" id="Lfj-Xd-xAi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eOM-0l-d9b" secondAttribute="trailing" id="Ojd-ef-hHO"/>
                             <constraint firstAttribute="trailing" secondItem="rDZ-uI-iT1" secondAttribute="trailing" constant="35" id="OmK-dI-HN0"/>
                             <constraint firstItem="hGS-bF-f65" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PYn-qR-IfW"/>
@@ -164,13 +177,12 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="chestImage" destination="eOM-0l-d9b" id="Omd-kB-CoR"/>
+                        <outlet property="attackButton" destination="2Fp-Nv-ubP" id="DS6-p3-jFb"/>
+                        <outlet property="chestImage" destination="eOM-0l-d9b" id="BxB-oQ-sGF"/>
                         <outlet property="enemyHpLabel" destination="Qps-Vl-EAF" id="jtS-vo-Ubp"/>
-                        <outlet property="enemyImg" destination="rDZ-uI-iT1" id="sCR-OR-gAr"/>
+                        <outlet property="enemyImage" destination="rDZ-uI-iT1" id="jjH-MH-9Nd"/>
                         <outlet property="playerHpLabel" destination="Nnw-SG-cVs" id="ocj-jz-Mrv"/>
                         <outlet property="printLabel" destination="gd6-Nb-zy1" id="AJq-Yh-oTF"/>
-                        <outletCollection property="ChestTapped" destination="eOM-0l-d9b" id="9tx-M8-WYe"/>
-                        <outletCollection property="onChestTapped" destination="eOM-0l-d9b" collectionClass="NSMutableArray" id="AE3-1q-tSK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -179,6 +191,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="attack" width="198" height="223"/>
         <image name="bg" width="768" height="1024"/>
         <image name="chest" width="393" height="440"/>
         <image name="enem1" width="574" height="487"/>
